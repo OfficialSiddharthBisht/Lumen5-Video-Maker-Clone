@@ -1,0 +1,65 @@
+header{ 
+    margin: 3%;
+    position: sticky;
+}
+
+header ul{
+    display: flex;
+    justify-content: space-around;
+}
+header ul li{
+    list-style: none;
+    font-size: 18px;
+}
+header ul li a{
+    text-decoration: none;
+    color: black;
+}
+#space{
+    width: 40%;
+}
+#login{
+    padding: 9px;
+    color: blue;
+    border: 2px solid blue;
+    border-radius: 40%;
+}
+#signup{
+    padding: 11px;
+    color: white;
+    background-color: blue;
+    border-radius: 40%;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    font-size: 18px;
+    border: none;
+    background-color: white;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    text-decoration: none;
+    margin: 25px;
+  }
+  
+
+  .dropdown:hover .dropdown-content {
+      display:grid;
+      grid-template-columns: repeat(2,1fr);
+}
