@@ -8,6 +8,19 @@
     <link rel="icon" type="image/png" href="Assets/Images/favicon.ico">
     <link rel="stylesheet" href="Styles/navbar.css">
     <link rel="stylesheet" href="Styles/footer.css">
+    <style>
+        .top-content{
+            display: flex;
+            justify-content: space-around;
+        }
+        .brand-logos{
+            display: flex;
+            justify-content: space-around;
+        }
+        .text-center{
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -52,11 +65,48 @@
                 </div>
             </li>
             <li><a id = "login" href="#">Login</a></li>
-            <li><a id="signup" href="#">Sign up</a></li>
+            <li><a class="signup" href="#">Sign up</a></li>
         </ul>
     </header>
     <div class="container">
-
+        <div class="top-content">
+            <div class="top-content-left">     
+                <h1>Video maker built to </h1>
+                <h1>supercharge your </h1>
+                <h1>content strategy</h1>
+                <h3>Easily make videos for</h3>
+                <h3><strong>content marketing,</strong></h3>
+                <h3><strong> through leadership </strong>, and </h3>
+                <h3><strong>brand awareness</strong> in a snap.</h3>
+                <a class="signup" href="#">Sign up free</a>
+            </div>
+            <div class="top-container-right">
+                <video controls width="550">
+                    <source src="Assets/Videos/product-tour-header.mp4"
+                            type="video/mp4">
+                </video>
+            </div>
+        </div>
+       <div class="brands-content">
+           <h2 class="text-center">Over 6 million videos created by thousands of businesses</h2>
+           <div class="brand-logos">
+               <img src="Assets/PartnerBrandLogos/logo-salesforce-color.png" alt="salesforce">
+               <img src="Assets/PartnerBrandLogos/logo-pwc-color.png" alt="pwc">
+               <img src="Assets/PartnerBrandLogos/logo-siemens-color1.png" alt="simens">
+               <img src="Assets/PartnerBrandLogos/logo-kpmg-color.png" alt="kpmg">
+               <img src="Assets/PartnerBrandLogos/logo-merk-color.png" alt="merck">
+               <img src="Assets/PartnerBrandLogos/logo-sap-color.png" alt="sap">
+               <img src="Assets/PartnerBrandLogos/logo-mitsubishi-color.png" alt="mitsubishi">
+               <img src="Assets/PartnerBrandLogos/logo-cisco-color.png" alt="cisco">
+           </div>
+       </div>
+       <div class="video-templates">
+            <h1 class="text-center">Captivating video templates</h1>
+            <h3 class="text-center" >Drag and drop. No experienced required.</h3>
+            <div class="video-templates-videos">
+                <video src="Assets/Videos/Captivating-video-templates/prev_tracer_1.mp4"></video>
+            </div>
+       </div> 
     </div>
     <footer>
         <div class="f-container">

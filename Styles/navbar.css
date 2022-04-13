@@ -24,7 +24,7 @@ header ul li a{
     border: 2px solid blue;
     border-radius: 40%;
 }
-#signup{
+.signup{
     padding: 11px;
     color: white;
     background-color: blue;
