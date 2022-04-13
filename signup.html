@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumen 5| Video Content Marketing</title>
+</head>
+<style>
+    #container
+    {
+        display: flex;
+        flex-direction: row;
+        padding: 0px;
+        margin: -8px;
+    }
+    #leftcontainer
+    {
+        width:37%;
+        height: 760px;
+        margin: 0px;
+        padding: 25px 40px;
+        background-color: rgb(101, 101, 226);
+    }
+    #leftcontainer >h1
+    {
+        font-size: 52px;
+        font-weight: 400;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+    }
+    #leftcontainer >h2
+    {
+        font-size: 35px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        font-weight: lighter;
+        line-height: 50px;
+    }
+    #rightcontainer
+    {
+        width: 79%;
+        padding-left: 95px;
+        padding-right: 60px;
+        
+    }
+    #rightcontainer >h1{
+        text-align: left;
+        font-size: 36px;
+        margin-top: -3px;
+        margin-bottom: 60px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight:800;
+    }
+    #rightcontainer h4
+    {
+        font-family:'Montserrat', sans-serif;
+        font-weight: 500 ;
+        font-size: 15px;
+        margin-bottom: 35px;
+    }
+    #rightcontainer input
+    {
+        width: 75%;
+        border: none;
+        border-bottom: 1px solid lightgrey;
+    }
+    #rightcontainer input:focus
+    {
+        outline: none;
+        border-bottom: 2px solid rgb(0, 110, 255);
+    }
+    #unorderedList
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        font-size: 15px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 600;
+        padding: 12px 80px 30px 0px;
+        line-height: 0.15px;
+    }
+    #rightcontainer input[type=submit]
+    {
+        height: 45px;
+        border-radius: 20px;
+        font-size: 17px;
+        background-color: rgb(128, 128, 230);
+        color: white;
+        cursor: pointer;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #rightcontainer input[type=submit]:hover
+    {
+        background-color: rgb(10, 10, 168);
+    }
+
+    #rightcontainer hr
+    {  
+        display: inline-block;
+        width: 275px;
+    }
+    #or
+    {
+        display: inline-block;
+        margin: 30px 8px;
+    }
+    #rightcontainer button
+    {
+        display: block;
+        width: 75%;
+        height: 48px;
+        border-radius: 20px;
+        border-color: rgb(65, 65, 236);
+        font-size: 14px;
+        background-color: white;
+        color: rgb(65, 65, 236);
+        cursor: pointer;
+        margin-bottom: 50px;
+    }
+    #rightcontainer a
+    {
+        text-decoration: underline;
+        cursor: pointer;
+        color: rgb(58, 58, 245);
+    }
+    #rightcontainer h3
+    {
+        font-weight: 600;
+        font-size: 17px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(59, 54, 54);
+    }
+    #rightcontainer p
+    {
+        font-size: 14px;
+        font-family:'Montserrat', sans-serif;
+        color: gray;
+    }
+
+    #logo
+    {
+        width:150px;
+        height: 80px;
+        margin: auto;
+    }
+    #partnerlogos
+    {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding: 10px;
+    }
+    #partnerlogos >div >img{
+        width: 85px;
+    }
+</style>
+<body>
+    <div id="container">
+        <div id="leftcontainer">
+        <img  id="logo" src="https://storage.googleapis.com/lumen5-site-images/L5-logo/logo-white_266x156.png">
+        <h1 >Supercharge your content strategy</h1>
+        <h2>Join 800,000+ brands creating
+            videos with Lumen5</h2>
+            <div id="partnerlogos">
+                <div>
+                    <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-seimens-white.png">
+                </div>
+                <div>
+                    <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-sf-white.png" >
+                </div>
+                <div>
+                    <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-merck-white.png">
+                </div>
+                <div>
+                    <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-sap-white.png" >
+                </div>
+                <div>
+                    <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-kpmg-white.png" >
+                </div>
+                <div>
+                    <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-cisco-white.png">
+                </div>
+            </div>
+        </div>
+        <div id="rightcontainer">
+            <h1>Get started with a free account</h1>
+            <form>
+                <h4>FULL NAME</h4>
+                <input id="name" type="text">
+                <h4>WORK EMAIL</h4>
+                <input id="email" type="text">
+                <h4>PASSWORD</h4>
+                <input id="password" type="password">
+                <div id="unorderedList">
+                        <div><ul><li>One lowercase character</li> </ul></div>
+                        <div><ul><li>8 characters minimum</li></ul></div>
+                        <div><ul><li>One uppercase character</li> </ul></div>
+                        <div><ul><li>Contains a number or symbol</li></ul></div>
+                </div>
+                <input id="createAccount" type="submit" value="Create account">
+            </form>
+            <hr><p id="or">OR</p><hr>
+            <button>Sign up with Facebook</button>
+            <h3>Already have a Lumen5 account?<a>Log in</a></h3>
+            <p id="termsPolicy">By clicking <a>"Create account"</a> I agree to Lume5's <a>Terms of Use</a> and <a>Privacy Policy</a></p>
+        </div>
+
+    </div>
+    
+</body>
+</html>
