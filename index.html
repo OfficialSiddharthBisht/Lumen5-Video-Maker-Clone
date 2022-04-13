@@ -8,6 +8,7 @@
     <link rel="icon" type="image/png" href="Assets/Images/favicon.ico">
     <link rel="stylesheet" href="Styles/navbar.css">
     <link rel="stylesheet" href="Styles/footer.css">
+    <link rel="stylesheet" href="Styles/lightbox.css">
     <style>
         .top-content{
             display: flex;
@@ -81,10 +82,21 @@
                 <a class="signup" href="#">Sign up free</a>
             </div>
             <div class="top-container-right">
-                <video loading ="lazy" controls width="550">
+                <!-- <video loading ="lazy" controls width="550">
                     <source src="Assets/Videos/product-tour-header.mp4"
                             type="video/mp4">
-                </video>
+                </video> -->
+                <div class="light">
+                    <a class="boxclose boxclose" onclick="lightbox_close();"></a>
+                    <video class="VisaChipCardVideo" width="600" controls>
+                        <source src="Assets/Videos/product-tour-header.mp4" type="video/mp4">
+                      </video>
+                </div>
+                <div class="fade" onClick="lightbox_close();"></div>
+
+                <div>
+                <a href="#" onclick="lightbox_open();"><img src="Assets/Thumbnails/image-hero.png" alt=""></a>
+                </div>
             </div>
         </div>
        <div class="brands-content">
@@ -104,7 +116,20 @@
             <h1 class="text-center">Captivating video templates</h1>
             <h3 class="text-center" >Drag and drop. No experienced required.</h3>
             <div class="video-templates-videos">
-                <video src="Assets/Videos/Captivating-video-templates/prev_tracer_1.mp4"></video>
+               <div class="video-homepage">
+                <div class="light">
+                    <a class="boxclose boxclose" onclick="lightbox_close();"></a>
+                    <video class="VisaChipCardVideo" width="600" controls>
+                      <source src="Assets/Videos/product-tour-header.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                  <div class="fade" onClick="lightbox_close();"></div>
+                  
+                  <div>
+                    <a href="#" onclick="lightbox_open();"><img src="Assets/Images/comment-kaylene.png" alt=""/></a>
+                  </div>
+                  
+               </div>
             </div>
        </div> 
     </div>
@@ -155,5 +180,6 @@
             <p>Terms of Use & Privacy Policy</p>
         </div>
     </footer>
+    <script src="Components/lightbox.js"></script>
 </body>
 </html>
