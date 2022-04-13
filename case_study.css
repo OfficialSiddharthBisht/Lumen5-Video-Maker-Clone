@@ -1,0 +1,118 @@
+
+    *{
+       margin:0px;
+       padding:0px;
+    }
+    #title {
+        text-align:center;
+        margin: 10px;
+        padding:20px;
+    }
+    #box1{
+        display:flex;
+        margin:10px;
+        width:100%;
+     
+    }
+    #dabba1{
+        width:50%;
+        margin:50px;
+        padding:10px;
+         font-size: 35px;
+         text-align: left;
+    }
+    #dabba1-heading{
+        padding: 10px;
+        margin:10px;
+        font-size:22px;
+    }
+    .btn{
+            background-color:blue;
+           border-radius: 20px;
+           text-decoration: none;
+           width:130px;
+           height:30px;
+           margin:10px;
+        }
+    #dabba2{
+        width:50%;
+        margin:10px;
+    }
+    .center{
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 18px;
+        width:80%;
+        border-radius: 10px;
+    }
+    #box2{
+        display: inline-block;
+        width:100%;
+       height: auto;
+        margin: 10px;
+        padding: 10px;
+    }
+    #box2-dabba1{
+        display:flex;
+        margin: 10px;
+        height:auto;
+    }
+    #box2-dabba2{
+        display:flex;
+        margin: 10px;
+        height:auto;
+    }
+    #box2-dabba1 div{
+        width:22%;
+        margin:10px;
+        height:auto;
+    }
+    #box2-dabba1 div img{
+        width:100%;
+    }
+    #box2-dabba2 div{
+        width:22%;
+        margin:10px;
+        height:auto;
+    }
+    
+    #box2-dabba2 div img{
+        width:100%;
+    }
+    #box3{
+        width:100%;
+        height:auto;
+        margin: 10px;
+        padding: 10px;
+
+    }
+    #box3-maindabba{
+        display: block;
+        border-radius: 20px;
+        width:80%;
+        margin:auto;
+        height:auto;
+        background-color: rgba(88,71,246,255);
+    }
+    #box3-maindabba div{
+       
+        width:50%;
+        height:auto;
+        text-align: center;
+        font-size: 22px;
+        margin-left: 210px;
+        padding: 40px;
+        color:white;
+    }
+    .btn2{
+        /* background-color:white; */
+        text-decoration:none;
+        border-radius: 20px;
+        width:90px;
+        height:30px;
+       
+    }
+.image{
+    border-radius: 20px;
+}
