@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="Styles/navbar.css">
     <link rel="stylesheet" href="Styles/footer.css">
     <link rel="stylesheet" href="Styles/lightbox.css">
-    <style>
+    <link rel="stylesheet" href="Styles/hoverVideoPlay.css">
+    <link rel="stylesheet" href="Styles/transformBlog.css">
+   <style>
         .top-content{
             display: flex;
             justify-content: space-around;
@@ -115,23 +117,30 @@
        <div class="video-templates">
             <h1 class="text-center">Captivating video templates</h1>
             <h3 class="text-center" >Drag and drop. No experienced required.</h3>
-            <div class="video-templates-videos">
-               <div class="video-homepage">
-                <div class="light">
-                    <a class="boxclose boxclose" onclick="lightbox_close();"></a>
-                    <video class="VisaChipCardVideo" width="600" controls>
-                      <source src="Assets/Videos/product-tour-header.mp4" type="video/mp4" />
-                    </video>
-                  </div>
-                  <div class="fade" onClick="lightbox_close();"></div>
-                  
-                  <div>
-                    <a href="#" onclick="lightbox_open();"><img src="Assets/Images/comment-kaylene.png" alt=""/></a>
-                  </div>
-                  
-               </div>
-            </div>
+            <!-- ! To make hover videos section -->
        </div> 
+       <div class="parent-transform-blog">
+        <div class="transform-blog-section">
+            <div>
+                <img src="Assets/Images/transform-blog-homepage.png" alt="">
+            </div>
+            <div class="transform-blog-content">
+                <h1>Transform blog posts into videos with A.I.</h1>
+                <p id="transform-blog-first-para">Starting from a blank page is hard — and with Lumen5, you don’t have to. Our AI-powered technology helps you storyboard your ideas, fit your content to a layout, and find music and visuals that enhance your message.</p>
+                <a href="signup.html">Get started for free →</a>
+                <p>“Lumen5 has enabled us to create more videos and drive more traffic, while having more time to invest in other projects.”</p>
+                <div id="drew">
+                    <div id="drew-image">
+                        <img src="Assets/Images/drew-sykes.jpg">
+                    </div>
+                    <div id="drew-about">
+                        <p><b>Drew Sykes </b>, Social Media Director</p>
+                        <img src="Assets/Images/nc-state-university.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
     <footer>
         <div class="f-container">

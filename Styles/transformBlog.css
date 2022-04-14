@@ -1,0 +1,29 @@
+.parent-transform-blog{
+    width: 100vw;
+    background-color: rgb(225, 224, 224);
+}
+.transform-blog-section{
+    margin: 13%;
+    display: flex;
+    text-align: center;
+}
+.transform-blog-content{
+    margin: 11%;
+}
+.transform-blog-content a{
+    text-decoration: none;
+
+}
+#transform-blog-first-para{
+    font-size:21px;
+}
+#drew{
+    display: flex;
+}
+#drew-image img{
+    width: 70px;
+    border-radius: 50%;
+}
+#drew-about img{
+    width: 140px;
+}
