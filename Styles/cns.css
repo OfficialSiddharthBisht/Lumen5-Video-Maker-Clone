@@ -1,0 +1,121 @@
+
+*{
+    margin:0px;
+    padding:0px;
+  }
+  #box1{
+  display:flex;
+  margin:10px;
+  width:100%; 
+  }
+  #dabba1{
+  width:50%;
+  margin:50px;
+  padding:10px;
+  font-size: 35px;
+  text-align: left;
+  
+  }
+  #dabba1-heading{
+  padding: 10px;
+  margin:10px;
+  font-size:22px;
+  }
+  .btn{
+    background-color:blue;
+   border-radius: 20px;
+   text-decoration: none;
+   width:130px;
+   height:30px;
+   margin:10px;
+  }
+  #dabba2{
+  width:50%;
+  margin:50px;
+  padding:10px;
+  }
+  .center{
+  display:block;
+  margin-top: 28px;
+  width:70%;
+  height: 50%;
+  border-radius: 10px;
+  }
+  #box4{
+    margin:10px;
+    padding:10px;
+    width:100%;
+    height:auto;
+    }
+    #box4-maindabba{
+    display:flex;
+    margin:10px;
+    padding:10px;
+    width:90%;
+    height:auto;
+    }
+    #box4-maindabba div{
+    margin:10px;
+    width:50%;
+    }
+    #box4-maindabba div h3,h2,p{
+    padding:5px;
+    text-align:left;
+    }
+    .center2{
+    width:90%;
+    height:70%;
+    margin-top:15px;
+    margin-left:5px;
+    border-radius: 20px;
+    }
+    #box2{
+     width:100%;
+     height:auto;
+        margin:30px;
+        margin-left:70px;
+        }
+        #container{
+        margin:60px;
+        padding:40px;
+        text-align:center;
+        font-size: 30px;
+        width:70%;
+        }
+        .center3{
+            width:90%;
+            height:70%;
+            margin-top:100px;
+            margin-left:5px;
+            border-radius: 20px;    
+            }
+            #box8{
+                width:100%;
+                height:auto;
+                margin: 10px;
+                padding: 10px;
+                
+                }
+                #box8-maindabba{
+                display: block;
+                border-radius: 20px;;
+                width:80%;
+                margin:auto;
+                height:auto;
+                background-color: rgba(88,71,246,255);
+                }
+                #box8-maindabba div{
+                width:50%;
+                height:auto;
+                text-align: center;
+                font-size: 22px;
+                margin-left: 210px;
+                padding: 40px;
+                color:white;
+                }
+                .btn2{
+                text-decoration:none;
+                border-radius: 20px;
+                width:90px;
+                height:30px;    
+                }
