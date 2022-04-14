@@ -1,30 +1,30 @@
-.parent-transform-blog{
+.parent-transform-blog, .parent-stay-on-brand{
     width: 100vw;
     background-color: rgb(225, 224, 224);
 }
-.transform-blog-section ,.content-library-section{
+.transform-blog-section ,.content-library-section,.stay-on-brand-section{
     margin: 14%;
     display: flex;
     text-align: center;
 
 }
-.transform-blog-content,.content-library-content {
+.transform-blog-content,.content-library-content,.stay-on-brand-content {
     margin: 7%;
 }
-.transform-blog-content a,.content-library-content a{
+.transform-blog-content a,.content-library-content a,.stay-on-brand-content a{
     text-decoration: none;
 
 }
-#transform-blog-first-para,.content-library-first-para{
+#transform-blog-first-para,.content-library-first-para,.stay-on-brand-first-para{
     font-size:21px;
 }
-#drew,#julia{
+#drew,#julia,#promod{
     display: flex;
 }
-#drew-image img,#julia-image img{
+#drew-image img,#julia-image img,#promod-image img{
     width: 70px;
     border-radius: 50%;
 }
-#drew-about img,#julia-about img{
+#drew-about img,#julia-about img,#promod-about img{
     width: 140px;
 }
