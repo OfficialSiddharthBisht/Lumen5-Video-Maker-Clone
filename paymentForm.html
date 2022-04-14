@@ -1,38 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document1</title>
-    <style>
-        #container>div{
-            width: 40%;
-        }
-        #leftDiv>div{
-            display: flex;
-            justify-content: space-between;
-        }
-        hr{
-            color: gray;
-        }
-    </style>
+    <link rel="stylesheet" href="./Styles/paymentform.css">
+  
 </head>
+
 <body>
     <div id="container">
         <div id="leftDiv">
-            <img src="./Assets/Images/logo.png" alt="#">
-            <div>
-                <div class="subscriptionModel">Subsceribe to Premium - v1.5 (monthly)</div>
-                <div class="amount"> US$780.00</div>
+            <a href="./price.html"><img src="./Assets/Images/logo.png" alt="#"> </a>
+            <div id="lightText">
+                <p class="subscriptionModel"> Subscribe to Premium - v1.5 (yearly)</p>
+                <div class="amount"> US</div>
             </div>
             <div class="premiumPayPage">
-                <h3  class="subscriptionModel">Premium - v1.5(monthly) </h3>
-                <h3 class="amount">US$708.00 </h3>
+                <h3>Premium - v1.5(yearly) </h3>
+                <h3 id="price1">US </h3>
             </div>
             <div id="toatlAmt">
                 <h3>Subtotal</h3>
-                <h3>US$708.00</h3>
+                <h3 id="price2">US</h3>
             </div>
             <hr>
             <div id="tax">
@@ -42,13 +34,59 @@
             <hr>
             <div id="dueAmt">
                 <h3>Total due today </h3>
-                <h3 class="amount">US$708</h3> 
+                <h3 id="price3">US</h3>
             </div>
         </div>
         <div id="rightDiv">
+            <h2>Pay with card</h2>
+            <div id="mail">
+                <label for="email"> email</label>
+                <input type="email" id="mailValidate" name="email" placeholder="Enter Email">
+            </div>
+            <div id="mainDiv">
+                <div>
+                    Card information
+                </div>
+                <div id="cardDetails">
+                    <input type="number" placeholder="1234 1234 1234 1234" id="card">
+                    <div id="expireCvc">
+                        <input type="date" id="expireDate">
+                        <input type="number" id="cvc" placeholder="CVC">
+                    </div>
 
+                </div>
+            </div>
+            <div id="nameCard">
+                <label for="name">Name on card</label>
+                <input type="text" name="name" id="nameOnCard">
+            </div>
+            <div id="billingAddress">
+                <div>Billing Address</div>
+                <select id="country">
+                    <option>India</option>
+                    <option>Sri Lanka</option>
+                    <option> England</option>
+                    <option>Canada</option>
+                </select>
+                <input type="text" name="" id="address" placeholder="Address line 1">
+                <input type="number" id="code" placeholder="Postal code">
+                <input type="text" id="city" placeholder="City">
+                <select id="state">
+                    <option>rajasthan</option>
+                    <option>delhi</option>
+                    <option> bihar</option>
+                    <option>UP</option>
+                </select>
+            </div>
+            <div id="subscribeBtn">
+                <input type="button" onclick="PaymentFun()" value="Subscribe">
+            </div>
+            <p>By confirming your subscription, you allow Lumen5 Technologies Ltd to charge your card for this payment
+                and future
+                payments in accordance with their terms.</p>
         </div>
     </div>
-  
+    <script src="./javascript/paymentform.js"></script>
 </body>
+
 </html>

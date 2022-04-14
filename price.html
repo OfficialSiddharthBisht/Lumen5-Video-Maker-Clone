@@ -62,8 +62,8 @@
         <p>PRICING</p>
         <H1>Plans for your video content creation<br> strategy</H1>
         <div id="plan">
-            <button type="submit">Bill monthly </button>
-            <button type="submit"> Bill yearly</button>
+            <button onclick="monthlyPlan()" type="submit">Bill monthly </button>
+            <button onclick="yearlyPlan()" type="submit"> Bill yearly</button>
         </div>
     </div>
     <div id="container2">
@@ -86,9 +86,9 @@
                 </div>
                 <div>
                     <a href="./paymentForm.html">
-                        <button class="planBtn">get Started </button>
+                        <button class="planBtn" onclick="funplan1()">get Started </button>
                     </a>
-                   
+
                 </div>
 
             </div>
@@ -120,7 +120,7 @@
                     <h2>Creator</h2>
                     <p>For individual content creators </p>
                 </div>
-                <div class="planDiv">
+                <div class="planDiv" id="createrPlan">
                     <h2>$11 USD</h2>
                     <p>per month, billed yearly </p>
                 </div>
@@ -129,7 +129,7 @@
                 </div>
                 <div>
                     <a href="./paymentForm.html">
-                        <button class="planBtn">get Started </button>
+                        <button class="planBtn" onclick="funplan2()">get Started </button>
                     </a>
                 </div>
 
@@ -159,7 +159,7 @@
                     <h2>Premium</h2>
                     <p>For professional video storytellers </p>
                 </div>
-                <div class="planDiv">
+                <div class="planDiv" id="createrPlan1">
                     <h2>$59 USD</h2>
                     <p>per month, billed yearly </p>
                 </div>
@@ -168,7 +168,7 @@
                 </div>
                 <div>
                     <a href="./paymentForm.html">
-                        <button class="planBtn">get Started </button>
+                        <button class="planBtn" onclick="funplan3()">get Started </button>
                     </a>
                 </div>
 
@@ -212,7 +212,7 @@
                     <h2>Business</h2>
                     <p>For brands focused on reach and growth </p>
                 </div>
-                <div class="planDiv">
+                <div class="planDiv" id="createrPlan2">
                     <h2>$149 USD</h2>
                     <p>per month, billed yearly </p>
                 </div>
@@ -221,7 +221,7 @@
                 </div>
                 <div>
                     <a href="./paymentForm.html">
-                        <button class="planBtn">get Started </button>
+                        <button class="planBtn" onclick="funplan4()">get Started </button>
                     </a>
                 </div>
             </div>
@@ -272,7 +272,7 @@
                 </div>
                 <div>
                     <a href="./paymentForm.html">
-                        <button class="planBtn">get Started </button>
+                        <button class="planBtn" onclick="funplan5()">get Started </button>
                     </a>
                 </div>
 
@@ -525,5 +525,7 @@
         </div>
     </footer>
 </body>
+<script src="./javascript/price.js"></script>
+
 
 </html>

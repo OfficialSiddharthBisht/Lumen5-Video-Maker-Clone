@@ -1,0 +1,154 @@
+#container {
+    display: flex;
+    width: 100%;
+}
+
+#container>div {
+    height: auto;
+    width: 35%;
+}
+
+#leftDiv {
+    margin-left: auto;
+}
+
+#leftDiv>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+hr {
+    color: gray;
+}
+
+#lightText {
+    display: flex;
+    flex-direction: column;
+}
+
+#lightText {
+    color: gray;
+    font-size: 20px;
+}
+
+.amount {
+    font-size: 40px;
+}
+
+#rightDiv {
+    margin: auto;
+}
+
+#mail {
+    background-color: rgb(246, 228, 243);
+    width: 100%;
+    border: 1px solid grey;
+    font-size: 20px;
+    padding-left: 12px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+}
+
+#mail>input {
+    background-color: rgb(246, 228, 243);
+    margin-left: 40px;
+    border: none;
+    width: 72%;
+    height: 30px;
+}
+
+#cardDetails {
+    display: flex;
+    flex-direction: column;
+}
+
+#cardDetails>input {
+    height: 30px;
+    border-radius: 7px;
+}
+
+#expireDate {
+    border-radius: 6px;
+    height: 30px;
+    width: 48%;
+}
+
+#cvc {
+    border-radius: 6px;
+    height: 30px;
+    width: 48%;
+}
+
+#nameCard>label {
+    margin-bottom: 4px;
+    margin-top: 20px;
+    display: block;
+}
+
+#nameCard>input {
+    width: 100%;
+    height: 30px;
+    border-radius: 7px;
+}
+
+#billingAddress {
+    margin-top: 20px;
+    margin-bottom: 3px;
+    display: flex;
+    flex-direction: column;
+}
+
+#billingAddress>div {
+    margin-bottom: 5px;
+}
+
+#country,
+#address,
+#code,
+#city,
+#state {
+    height: 35px;
+    border-radius: 7px;
+    border: 1px solid;
+}
+
+#state {
+    margin-bottom: 20px;
+}
+
+#subscribeBtn {
+    width: 100%;
+    margin: auto;
+}
+
+#subscribeBtn>input {
+    width: 100%;
+    height: 30px;
+    border-radius: 6px;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(71, 71, 189);
+}
+
+@media all and (min-width:80px) and (max-width:650px) {
+    #container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    #container>div {
+        height: auto;
+        width: auto;
+    }
+
+    #leftDiv {
+        margin: auto;
+    }
+
+    #rightDiv {
+        margin: 40px;
+    }
+}
+
