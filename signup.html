@@ -15,8 +15,8 @@
         margin: -8px;
     }
     #leftcontainer
-    {
-        width:37%;
+    {  
+        width:35%;
         height: 760px;
         margin: 0px;
         padding: 25px 40px;
@@ -39,29 +39,68 @@
     }
     #rightcontainer
     {
-        width: 79%;
+        width: 81%;
         padding-left: 95px;
-        padding-right: px;
+        padding-right: 10px;
         
     }
-    #rightcontainer >h1{
+    #logo1
+    {
+        display: none;
+    }
+    #rightcontainer >h1
+    {
         text-align: left;
         font-size: 36px;
         margin-top: -3px;
         margin-bottom: 60px;
         font-family: 'Montserrat', sans-serif;
         font-weight:800;
+        color: rgb(61, 56, 56);
     }
-    #rightcontainer h4
+    .rightH4s
     {
         font-family:'Montserrat', sans-serif;
-        font-weight: 500 ;
-        font-size: 15px;
+        font-weight: bold;
+        font-size: 16px;
         margin-bottom: 35px;
+        color: rgb(100, 86, 86);
+    }
+    #passwordContainer
+    {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        
+    }
+    #showContainer
+    {
+        display: flex;
+        flex-direction: row;
+        font-weight: bold;
+        color: grey;
+        font-family: 'Montserrat', sans-serif;
+        cursor: pointer;
+    }
+
+    #showIcon
+    {
+        width: 18px;
+        height: 18px;
+        margin-top: 20px;
+        margin-right: 4px;
+        
+    }
+    #forgotPass
+    {
+        text-align: right;
+        color: gray;
+        font-family:'Montserrat', sans-serif ;
+
     }
     #rightcontainer input
     {
-        width: 75%;
+        width: 100%;
         border: none;
         border-bottom: 1px solid lightgrey;
     }
@@ -75,17 +114,37 @@
         display: grid;
         grid-template-columns: repeat(2,1fr);
         font-size: 15px;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-weight: 600;
-        padding: 12px 80px 30px 0px;
+        font-family:'Montserrat', sans-serif ;
+        font-weight:200;
         line-height: 0.15px;
+        padding: 15px 0px 30px 0px;
+        color: rgb(78, 73, 73);
+        
+    }
+    #unorderedList ul 
+    {
+        list-style: none;
+    }
+
+    #unorderedList ul li::before {
+        content: "\2022";
+        color: rgb(76, 104, 230);
+        font-weight: 1000;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+    }
+    #formContainer
+    {
+        padding-right: 200px;
+
     }
     #rightcontainer input[type=submit]
     {
         height: 45px;
         border-radius: 20px;
         font-size: 17px;
-        background-color: rgb(128, 128, 230);
+        background-color: rgb(84, 84, 179);
         color: white;
         cursor: pointer;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -98,7 +157,7 @@
     #rightcontainer hr
     {  
         display: inline-block;
-        width: 275px;
+        width: 44%;
     }
     #or
     {
@@ -108,7 +167,7 @@
     #rightcontainer button
     {
         display: block;
-        width: 75%;
+        width: 100%;
         height: 48px;
         border-radius: 20px;
         border-color: rgb(65, 65, 236);
@@ -153,6 +212,36 @@
     #partnerlogos >div >img{
         width: 85px;
     }
+    @media all and (min-width:450px) and (max-width:850px)
+    {
+        #leftcontainer
+        {
+            display: none;
+        }
+        
+        #rightcontainer
+        {
+            width: 100%;
+            padding: 35px;
+        }
+        #rightcontainer >h1
+        {
+            font-size: 30px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        #formContainer
+        {
+            padding-right: 20px;
+
+        }
+        #logo1
+        {
+            display: block;
+            width: 175px;
+            margin-bottom: 45px ;
+            margin-top: 50px;
+        }
+    }
 </style>
 <body>
     <div id="container">
@@ -183,13 +272,22 @@
             </div>
         </div>
         <div id="rightcontainer">
+            <img  id="logo1" src="https://storage.googleapis.com/lumen5-site-images/L5-logo/L5-logo-color.png" alt="">
             <h1>Get started with a free account</h1>
-            <form>
-                <h4>FULL NAME</h4>
+            <form id="formContainer">
+                <h4 class="rightH4s">FULL NAME</h4>
                 <input id="name" type="text">
-                <h4>WORK EMAIL</h4>
+                <h4 class="rightH4s">WORK EMAIL</h4>
                 <input id="email" type="text">
-                <h4>PASSWORD</h4>
+                <div id="passwordContainer">
+                    <div>
+                    <h4 class="rightH4s">PASSWORD</h4>
+                    </div>
+                    <div id="showContainer">
+                    <img id="showIcon" src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxNzIgMTcyIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBmb250LWZhbWlseT0ibm9uZSIgZm9udC13ZWlnaHQ9Im5vbmUiIGZvbnQtc2l6ZT0ibm9uZSIgdGV4dC1hbmNob3I9Im5vbmUiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMCwxNzJ2LTE3MmgxNzJ2MTcyeiIgZmlsbD0ibm9uZSI+PC9wYXRoPjxnIGZpbGw9IiM5NWE1YTYiPjxwYXRoIGQ9Ik04NiwyOC42NjY2N2MtNDkuMTQ5LDAgLTcyLjQ4NTc5LDQyLjEzMDI2IC03OC4xNDc0Niw1NC4xNTU5M2MtMC45NDYsMi4wMDY2NyAtMC45NDYsNC4zMzQxNSAwLDYuMzQwODJjNS42NjE2NywxMi4wMzI4MyAyOC45OTg0Niw1NC4xNjk5MiA3OC4xNDc0Niw1NC4xNjk5MmM0OC45NzcsMCA3Mi4zMjk0NywtNDEuODMyMjggNzguMDkxNDcsLTU0LjAyOTk0YzAuOTg5LC0yLjA5OTgzIDAuOTg5LC00LjUwNjk0IDAsLTYuNjA2NzhjLTUuNzYyLC0xMi4xOTc2NiAtMjkuMTE0NDcsLTU0LjAyOTk0IC03OC4wOTE0NywtNTQuMDI5OTR6TTg2LDUwLjE2NjY3YzE5Ljc4NzE3LDAgMzUuODMzMzMsMTYuMDQ2MTcgMzUuODMzMzMsMzUuODMzMzNjMCwxOS43ODcxNyAtMTYuMDQ2MTcsMzUuODMzMzMgLTM1LjgzMzMzLDM1LjgzMzMzYy0xOS43ODcxNywwIC0zNS44MzMzMywtMTYuMDQ2MTcgLTM1LjgzMzMzLC0zNS44MzMzM2MwLC0xOS43ODcxNyAxNi4wNDYxNywtMzUuODMzMzMgMzUuODMzMzMsLTM1LjgzMzMzek04Niw2NC41Yy0xMS44NzQxMiwwIC0yMS41LDkuNjI1ODggLTIxLjUsMjEuNWMwLDExLjg3NDEyIDkuNjI1ODgsMjEuNSAyMS41LDIxLjVjMTEuODc0MTIsMCAyMS41LC05LjYyNTg4IDIxLjUsLTIxLjVjMCwtMTEuODc0MTIgLTkuNjI1ODgsLTIxLjUgLTIxLjUsLTIxLjV6Ij48L3BhdGg+PC9nPjwvZz48L3N2Zz4=">
+                    <h4>Show</h4>
+                    </div> 
+                </div>
                 <input id="password" type="password">
                 <div id="unorderedList">
                         <div><ul><li>One lowercase character</li> </ul></div>
@@ -198,14 +296,38 @@
                         <div><ul><li>Contains a number or symbol</li></ul></div>
                 </div>
                 <input id="createAccount" type="submit" value="Create account">
+                <hr><p id="or">OR</p><hr>
+                <button>Sign up with Facebook</button>
+                <h3>Already have a Lumen5 account?<a href="login.html">Log in</a></h3>
+                <p id="termsPolicy">By clicking <a>"Create account"</a> I agree to Lume5's <a>Terms of Use</a> and <a>Privacy Policy</a></p>
             </form>
-            <hr><p id="or">OR</p><hr>
-            <button>Sign up with Facebook</button>
-            <h3>Already have a Lumen5 account?<a href="login.html">Log in</a></h3>
-            <p id="termsPolicy">By clicking <a>"Create account"</a> I agree to Lume5's <a>Terms of Use</a> and <a>Privacy Policy</a></p>
+           
         </div>
 
     </div>
     
 </body>
+<script>
+    document.querySelector('form').addEventListener('submit',addData);
+    function addData()
+    {
+        event.preventDefault();
+        var userData;
+        if(localStorage.getItem('userData')==null)
+        {
+            var userData=[];
+            localStorage.setItem('userData',JSON.stringify(userData));
+
+        }
+        userData=JSON.parse(localStorage.getItem('userData'));
+        var userObj={
+            name:document.getElementById('name').value,
+            email:document.getElementById('email').value,
+            password:document.getElementById("password").value,
+        }
+        userData.push(userObj);
+        localStorage.setItem('userData',JSON.stringify(userData));
+        window.location.reload();
+    }
+</script>
 </html>
