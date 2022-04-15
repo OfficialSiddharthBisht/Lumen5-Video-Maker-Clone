@@ -5,9 +5,9 @@
     display: flex;
     margin: 13%;
 }
-.common-content1 .common-right img{
+/* .common-content1 .common-right img{
     width: 100%;
-}
+} */
 .common-content1 p{
     margin-bottom: 50px;
 }
@@ -127,6 +127,9 @@
     text-decoration: none;
 }
 @media all and (max-width :765px){
+    .common-content1 .common-right img{
+    width: 100%;
+    }
     .common-content1{
         flex-wrap: wrap;
     }
