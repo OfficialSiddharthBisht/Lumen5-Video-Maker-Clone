@@ -28,6 +28,9 @@ footer .f-container{
     display: flex;
     justify-content:space-between;
 }
+.footer-row h4{
+    text-align: center;
+}
 @media all and (max-width:750px){
     footer{
         display: block;
