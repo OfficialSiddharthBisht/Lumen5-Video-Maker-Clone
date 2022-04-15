@@ -16,15 +16,15 @@
             <a href="./price.html"><img src="./Assets/Images/logo.png" alt="#"> </a>
             <div id="lightText">
                 <p class="subscriptionModel"> Subscribe to Premium - v1.5 (yearly)</p>
-                <div class="amount"> US</div>
+                <div class="amount">US$ <span> </span>USD</div>
             </div>
             <div class="premiumPayPage">
                 <h3>Premium - v1.5(yearly) </h3>
-                <h3 id="price1">US </h3>
+                <h3 id="price1">US$ <span> </span>USD</h3>
             </div>
             <div id="toatlAmt">
                 <h3>Subtotal</h3>
-                <h3 id="price2">US</h3>
+                <h3 id="price2">US$ <span> </span>USD</h3>
             </div>
             <hr>
             <div id="tax">
@@ -34,57 +34,88 @@
             <hr>
             <div id="dueAmt">
                 <h3>Total due today </h3>
-                <h3 id="price3">US</h3>
+                <h3 id="price3">US$ <span> </span> </h3>
             </div>
         </div>
         <div id="rightDiv">
-            <h2>Pay with card</h2>
-            <div id="mail">
-                <label for="email"> email</label>
-                <input type="email" id="mailValidate" name="email" placeholder="Enter Email">
-            </div>
-            <div id="mainDiv">
-                <div>
-                    Card information
-                </div>
-                <div id="cardDetails">
-                    <input type="number" placeholder="1234 1234 1234 1234" id="card">
-                    <div id="expireCvc">
-                        <input type="date" id="expireDate">
-                        <input type="number" id="cvc" placeholder="CVC">
+            <form action="">
+            
+                <div class="row">
+            
+                    <div class="col">
+            
+                        <h3 class="title">billing address</h3>
+            
+                        <div class="inputBox" id="name">
+                            <span>full name :</span>
+                            <input type="text" placeholder="john deo">
+                        </div>
+                        <div class="inputBox" id="mail">
+                            <span>email :</span>
+                            <input type="email" placeholder="example@example.com">
+                        </div>
+                        <div class="inputBox" id="address">
+                            <span>address :</span>
+                            <input type="text" placeholder="room - street - locality">
+                        </div>
+                        <div class="inputBox" id="city">
+                            <span>city :</span>
+                            <input type="text" placeholder="mumbai">
+                        </div>
+            
+                        <div class="flex">
+                            <div class="inputBox" id="state">
+                                <span>state :</span>
+                                <input type="text" placeholder="india">
+                            </div>
+                            <div class="inputBox" id="zipCode">
+                                <span>zip code :</span>
+                                <input type="text" placeholder="123 456">
+                            </div>
+                        </div>
+            
                     </div>
-
+            
+                    <div class="col">
+            
+                        <h3 class="title">payment</h3>
+            
+                        <div class="inputBox">
+                            <span>cards accepted :</span>
+                            <img src="Assets/Images/card_img.png" alt="">
+                        </div>
+                        <div class="inputBox" id="nameOnCard">
+                            <span>name on card :</span>
+                            <input type="text" placeholder="mr. john deo">
+                        </div>
+                        <div class="inputBox" id="cardNo">
+                            <span>credit card number :</span>
+                            <input type="number" placeholder="1111-2222-3333-4444">
+                        </div>
+                        <div class="inputBox" id="expMonth">
+                            <span>exp month :</span>
+                            <input type="text" placeholder="january">
+                        </div>
+            
+                        <div class="flex">
+                            <div class="inputBox" id="expYear">
+                                <span>exp year :</span>
+                                <input type="number" placeholder="2022">
+                            </div>
+                            <div class="inputBox" id="cvv">
+                                <span>CVV :</span>
+                                <input type="text" placeholder="1234">
+                            </div>
+                        </div>
+            
+                    </div>
+            
                 </div>
-            </div>
-            <div id="nameCard">
-                <label for="name">Name on card</label>
-                <input type="text" name="name" id="nameOnCard">
-            </div>
-            <div id="billingAddress">
-                <div>Billing Address</div>
-                <select id="country">
-                    <option>India</option>
-                    <option>Sri Lanka</option>
-                    <option> England</option>
-                    <option>Canada</option>
-                </select>
-                <input type="text" name="" id="address" placeholder="Address line 1">
-                <input type="number" id="code" placeholder="Postal code">
-                <input type="text" id="city" placeholder="City">
-                <select id="state">
-                    <option>rajasthan</option>
-                    <option>delhi</option>
-                    <option> bihar</option>
-                    <option>UP</option>
-                </select>
-            </div>
-            <div id="subscribeBtn">
-                <input type="button" onclick="PaymentFun()" value="Subscribe">
-            </div>
-            <p>By confirming your subscription, you allow Lumen5 Technologies Ltd to charge your card for this payment
-                and future
-                payments in accordance with their terms.</p>
-        </div>
+            
+                <input type="submit" onclick="PaymentFun()" value="proceed to checkout" class="submit-btn">
+            
+            </form>
+        </div> 
     </div>
     <script src="./javascript/paymentform.js"></script>
 </body>

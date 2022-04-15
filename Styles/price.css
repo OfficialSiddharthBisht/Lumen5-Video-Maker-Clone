@@ -226,6 +226,7 @@
     color: gray;
 }
 
+
 #compareP {
     text-align: center;
     font-size: 25px;
@@ -235,12 +236,14 @@
     width: 80%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    margin: auto;
-    padding: 0px;
-}
 
-.compareBtn>button {
+    margin: auto;
+    padding: 10px;
+}
+.compareBtn{
+    margin: auto;
+}
+.compareBtn>a>button {
     padding: 10px;
     font-size: 20px;
     border: none;
@@ -254,11 +257,14 @@
 }
 
 #heading7 {
+    width: 90%;
     text-align: center;
 }
-
+#container7{
+    margin-bottom: 20px;
+}
 #container7>div+div {
-    width: 80%;
+    width: 90%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -267,6 +273,45 @@
 #container7>div>div>p:first-child {
     font-size: 20px;
 }
+
+#container8{
+    width: 95%;
+    margin: auto;
+    font-size: 20px;
+    
+}
+#container8>div{
+    margin-bottom: 50px;
+    
+}
+#container8Child>div{
+    display: flex;
+    padding: 1%;
+    
+}
+#container8Child>div>div {
+    display: flex;
+    flex-direction: row;
+    
+
+}
+
+.width{
+    width: 25%;
+}
+.width+div{
+    margin-left: 25%;
+    width: 70%;
+    justify-content: space-between;
+    
+}
+.center>p{
+ text-align: center;
+ align-items: center;
+}
+
+
+
 
 @media all and (min-width:80px) and (max-width:450px) {
 
