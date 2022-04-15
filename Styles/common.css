@@ -1,0 +1,165 @@
+.common-create-container{
+    width: 100vw;
+}
+.common-content1{
+    display: flex;
+    margin: 13%;
+}
+.common-content1 .common-right img{
+    width: 100%;
+}
+.common-content1 p{
+    margin-bottom: 50px;
+}
+.common-content1 .common-signUp{
+    color: white;
+    font-weight: bold;
+    display: inline;
+    background-color:rgb(78, 78, 169);
+    padding: 20px;
+    border-radius: 41%;
+}
+.common-content2{
+    width: 100vw;
+    background-color: rgba(245, 245, 245, 0.767);
+}
+.common-content2 .parent-common-section{
+    margin: 15%;
+    margin-bottom: 20px;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(2,1fr);
+}
+.common-content3{
+    display: flex;
+    margin: 13%;
+}
+.common-content3 .common-content3-right{
+    text-align: center;
+    padding: 110px 0;
+}
+.common-content3 .common-content3-left img{
+    margin: 50px;
+}
+.common-content4{
+    text-align: center;
+    background-color: whitesmoke;
+}
+.common-content4 a{
+    text-decoration: none;
+    font-size: 32px;
+}
+.common-content4 h2{
+    font-size: 35px;
+    font-weight: bolder;
+}
+.common-content4 h4{
+    color: blue;
+}
+.common-content4 p{
+    font-size: 23px;
+}
+.common-content4 .common-content4-steps{
+    text-align: justify;
+    display: flex;
+}
+.common-content4 .common-content4-steps .step{
+    margin: 50px;
+}
+.common-content5{
+    display: flex;
+    margin: 150px;
+}
+.common-content5 p{
+    padding-inline-end: 80px 0;
+    font-size: 34px;
+}
+.common-content6{
+    text-align: center;
+}
+.common-content6 h1{
+    font-size: 48px;
+}
+.common-content6 p{
+    font-size: 34px;
+}
+.content-6-blog-section{
+    display: flex;
+    margin:auto;
+    width: 80%;
+}
+.content-6-blog-section img{
+    width: 100%;
+}
+.content-6-blog-section .blog-card{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 35px;
+}
+.content-6-blog-section .blog-card h3{
+    text-align: start;
+    font-size: smaller;
+    color: grey;
+}
+.content-6-blog-section .blog-card h4{
+    text-align: end;
+    color: gray;
+}
+.common-content7 .blue-area{
+    background-color: blue;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    color: white;
+    padding: 120px;
+}
+.common-content7 .blue-area p{
+    font-size: 23px;
+}
+.common-content7 .blue-area h1{
+    font-size: 49px;
+}
+.common-content7 .blue-area a{
+    font-size: 26px;
+    background-color: white;
+    color: rgba(39, 39, 240, 0.864);
+    padding: 14px;
+    border-radius: 35%;
+    text-decoration: none;
+}
+@media all and (max-width :765px){
+    .common-content1{
+        flex-wrap: wrap;
+    }
+    .common-content1 .common-right img{
+        margin-top: 25px;
+    }
+    .common-content2 .parent-common-section{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .common-content3{
+        flex-wrap: wrap;
+    }   
+    .common-content3 .common-content3-left img{
+        width: 100%;
+    }
+    .common-content3 .common-content3-right{
+        padding: 0 0;
+    }
+    .common-content4 .common-content4-steps{
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+    .common-content5{
+        flex-wrap: wrap;
+    }
+    .common-content5 img{
+        width: 100%;
+    }
+    .content-6-blog-section{
+        flex-wrap: wrap;
+    }
+    .common-content7 .blue-area{
+        width: 100%;
+    }
+}

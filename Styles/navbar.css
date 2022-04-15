@@ -36,6 +36,7 @@ header ul li a{
     font-size: 18px;
     border: none;
     background-color: white;
+    z-index: 1;
   }
   
   /* The container <div> - needed to position the dropdown content */
@@ -49,16 +50,18 @@ header ul li a{
     display: none;
     position: absolute;
     z-index: 1;
+    background-color: white;
+    padding-left: 80px;
+    padding-right: 80px;
   }
   
   /* Links inside the dropdown */
   .dropdown-content a {
+      display: inline;
     color: black;
     text-decoration: none;
-    margin: 25px;
+    margin: 12px;
   }
-  
-
   .dropdown:hover .dropdown-content {
       display:grid;
       grid-template-columns: repeat(2,1fr);
