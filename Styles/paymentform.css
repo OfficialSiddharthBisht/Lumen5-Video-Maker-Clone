@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 #container {
     display: flex;
     width: 100%;
@@ -5,11 +8,12 @@
 
 #container>div {
     height: auto;
-    width: 35%;
+    width: 40%;
 }
 
 #leftDiv {
     margin-left: auto;
+    margin-right: auto;
 }
 
 #leftDiv>div {
@@ -35,103 +39,90 @@ hr {
     font-size: 40px;
 }
 
+
 #rightDiv {
-    margin: auto;
-}
 
-#mail {
-    background-color: rgb(246, 228, 243);
-    width: 100%;
-    border: 1px solid grey;
-    font-size: 20px;
-    padding-left: 12px;
-    margin-bottom: 20px;
-    border-radius: 7px;
-}
-
-#mail>input {
-    background-color: rgb(246, 228, 243);
-    margin-left: 40px;
-    border: none;
-    width: 72%;
-    height: 30px;
-}
-
-#cardDetails {
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    min-height: 100vh;
+
 }
 
-#cardDetails>input {
-    height: 30px;
-    border-radius: 7px;
+#rightDiv form {
+    padding: 20px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
 }
 
-#expireDate {
-    border-radius: 6px;
-    height: 30px;
-    width: 48%;
+
+
+#rightDiv form .row .col {
+    flex: 1 1 250px;
 }
 
-#cvc {
-    border-radius: 6px;
-    height: 30px;
-    width: 48%;
+#rightDiv form .row .col .title {
+    font-size: 20px;
+    color: #333;
+    padding-bottom: 5px;
+    text-transform: uppercase;
 }
 
-#nameCard>label {
-    margin-bottom: 4px;
-    margin-top: 20px;
+#rightDiv form .row .col .inputBox {
+    margin: 15px 0;
+}
+
+#rightDiv form .row .col .inputBox span {
+    margin-bottom: 10px;
     display: block;
 }
 
-#nameCard>input {
-    width: 100%;
-    height: 30px;
-    border-radius: 7px;
+#rightDiv form .row .col .inputBox input {
+    width: 90%;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 15px;
+    text-transform: none;
 }
 
-#billingAddress {
-    margin-top: 20px;
-    margin-bottom: 3px;
+#rightDiv form .row .col .inputBox input:focus {
+    border: 1px solid #000;
+}
+
+#rightDiv form .row .col .flex {
     display: flex;
-    flex-direction: column;
+    gap: 15px;
+}
+#rightDiv form .row .col .flex .inputBox {
+    margin-top: 5px;
 }
 
-#billingAddress>div {
-    margin-bottom: 5px;
+#rightDiv form .row .col .inputBox img {
+    height: 34px;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 1px #000);
 }
 
-#country,
-#address,
-#code,
-#city,
-#state {
-    height: 35px;
-    border-radius: 7px;
-    border: 1px solid;
-}
-
-#state {
-    margin-bottom: 20px;
-}
-
-#subscribeBtn {
+#rightDiv form .submit-btn {
     width: 100%;
-    margin: auto;
+    padding: 12px;
+    font-size: 17px;
+    background: #27ae60;
+    color: #fff;
+    margin-top: 5px;
+    cursor: pointer;
 }
 
-#subscribeBtn>input {
-    width: 100%;
-    height: 30px;
-    border-radius: 6px;
-    font-size: 20px;
-    color: white;
-    background-color: rgb(71, 71, 189);
+#rightDiv form .submit-btn:hover {
+    background: #2ecc71;
 }
-
 @media all and (min-width:80px) and (max-width:650px) {
     #container {
+        box-sizing: border-box;
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -144,11 +135,12 @@ hr {
     }
 
     #leftDiv {
-        margin: auto;
+        width: 100%;
     }
 
-    #rightDiv {
-        margin: 40px;
+    #leftDiv {
+        margin-left: 12%;
+        margin-right: 12%;
     }
+
 }
-
