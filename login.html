@@ -14,28 +14,33 @@
         padding: 0px;
         margin: -8px;
     }
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
     #leftcontainer
     {  
         width:35%;
-        height: 760px;
+        position: sticky;
+        height: 100%;
         margin: 0px;
-        padding: 25px 40px;
-        background-color: rgb(101, 101, 226);
+        padding: 25px 35px 0px 25px;
+        background-image: url(https://storage.googleapis.com/lumen5-site-images/website-assets/login-bg3.png);
+        background-size: cover;
+        top:0px;
+        bottom: 0px;
     }
     #leftcontainer >h1
     {
-        font-size: 52px;
-        font-weight: 400;
-        font-family: Arial, Helvetica, sans-serif;
+        font-size: 50px;
+        font-weight:600;
+        font-family: 'Poppins', sans-serif;
         color: white;
     }
     #leftcontainer >h2
     {
-        font-size: 35px;
-        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        font-family: 'Poppins', sans-serif;
         color: white;
         font-weight: lighter;
-        line-height: 50px;
+        line-height: 41px;
     }
     #rightcontainer
     {
@@ -54,13 +59,13 @@
         font-size: 36px;
         margin-top: -3px;
         margin-bottom: 60px;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Poppins', sans-serif;
         font-weight:800;
         color: rgb(61, 56, 56);
     }
     .rightH4s
     {
-        font-family:'Montserrat', sans-serif;
+        font-family:'Poppins', sans-serif;
         font-weight: bold;
         font-size: 16px;
         margin-bottom: 35px;
@@ -79,7 +84,7 @@
         flex-direction: row;
         font-weight: bold;
         color: grey;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Poppins', sans-serif;
         cursor: pointer;
     }
 
@@ -95,7 +100,7 @@
     {
         text-align: right;
         color: gray;
-        font-family:'Montserrat', sans-serif ;
+        font-family:'Poppins', sans-serif ;
 
     }
     #rightcontainer input
@@ -114,7 +119,7 @@
         display: grid;
         grid-template-columns: repeat(2,1fr);
         font-size: 15px;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family:'Poppins', sans-serif;
         font-weight: 600;
         padding: 12px 80px 30px 0px;
         line-height: 0.15px;
@@ -132,7 +137,7 @@
         background-color: rgb(84, 84, 179);
         color: white;
         cursor: pointer;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Poppins', sans-serif;
     }
     #rightcontainer input[type=submit]:hover
     {
@@ -172,30 +177,30 @@
     {
         font-weight: 600;
         font-size: 17px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Poppins', sans-serif;
         color: rgb(59, 54, 54);
     }
     #rightcontainer p
     {
         font-size: 14px;
-        font-family:'Montserrat', sans-serif;
+        font-family:'Poppins', sans-serif;
         color: gray;
     }
 
     #logo
     {
-        width:150px;
+        width:120px;
         height: 80px;
-        margin: auto;
+        margin: 0px;
     }
     #partnerlogos
     {
         display: grid;
         grid-template-columns: repeat(3,1fr);
-        padding: 10px;
+        padding: 10px 10px 0px 10px;
     }
     #partnerlogos >div >img{
-        width: 85px;
+        width: 82px;
     }
     @media all and (min-width:450px) and (max-width:850px)
     {
@@ -212,7 +217,7 @@
         #rightcontainer >h1
         {
             font-size: 30px;
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Poppins', sans-serif;
         }
         #formContainer
         {
@@ -269,7 +274,7 @@
                 </div>
                 <div id="showContainer">
                 <img id="showIcon" src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxNzIgMTcyIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBmb250LWZhbWlseT0ibm9uZSIgZm9udC13ZWlnaHQ9Im5vbmUiIGZvbnQtc2l6ZT0ibm9uZSIgdGV4dC1hbmNob3I9Im5vbmUiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMCwxNzJ2LTE3MmgxNzJ2MTcyeiIgZmlsbD0ibm9uZSI+PC9wYXRoPjxnIGZpbGw9IiM5NWE1YTYiPjxwYXRoIGQ9Ik04NiwyOC42NjY2N2MtNDkuMTQ5LDAgLTcyLjQ4NTc5LDQyLjEzMDI2IC03OC4xNDc0Niw1NC4xNTU5M2MtMC45NDYsMi4wMDY2NyAtMC45NDYsNC4zMzQxNSAwLDYuMzQwODJjNS42NjE2NywxMi4wMzI4MyAyOC45OTg0Niw1NC4xNjk5MiA3OC4xNDc0Niw1NC4xNjk5MmM0OC45NzcsMCA3Mi4zMjk0NywtNDEuODMyMjggNzguMDkxNDcsLTU0LjAyOTk0YzAuOTg5LC0yLjA5OTgzIDAuOTg5LC00LjUwNjk0IDAsLTYuNjA2NzhjLTUuNzYyLC0xMi4xOTc2NiAtMjkuMTE0NDcsLTU0LjAyOTk0IC03OC4wOTE0NywtNTQuMDI5OTR6TTg2LDUwLjE2NjY3YzE5Ljc4NzE3LDAgMzUuODMzMzMsMTYuMDQ2MTcgMzUuODMzMzMsMzUuODMzMzNjMCwxOS43ODcxNyAtMTYuMDQ2MTcsMzUuODMzMzMgLTM1LjgzMzMzLDM1LjgzMzMzYy0xOS43ODcxNywwIC0zNS44MzMzMywtMTYuMDQ2MTcgLTM1LjgzMzMzLC0zNS44MzMzM2MwLC0xOS43ODcxNyAxNi4wNDYxNywtMzUuODMzMzMgMzUuODMzMzMsLTM1LjgzMzMzek04Niw2NC41Yy0xMS44NzQxMiwwIC0yMS41LDkuNjI1ODggLTIxLjUsMjEuNWMwLDExLjg3NDEyIDkuNjI1ODgsMjEuNSAyMS41LDIxLjVjMTEuODc0MTIsMCAyMS41LC05LjYyNTg4IDIxLjUsLTIxLjVjMCwtMTEuODc0MTIgLTkuNjI1ODgsLTIxLjUgLTIxLjUsLTIxLjV6Ij48L3BhdGg+PC9nPjwvZz48L3N2Zz4=">
-                <h4>Show</h4>
+                <h4 id="showText">Show</h4>
                 </div> 
                 </div>
                 <input id="password" type="password">
@@ -289,6 +294,7 @@
 </body>
 <script>
    var userData=JSON.parse(localStorage.getItem('userData'));
+   document.getElementById("showContainer").addEventListener('click',showPass);
     document.querySelector('form'),addEventListener('submit',login);
     function login()
     {
@@ -314,5 +320,17 @@
            }
         });
     } 
+    function showPass()
+    {
+        var x=document.getElementById("password");
+
+        if (x.type === "password") {
+                x.type = "text";
+                document.getElementById("showText").textContent="Hide";
+            } else {
+                x.type = "password";
+                document.getElementById("showText").textContent="Show";
+            }
+    }
 </script>
 </html>
