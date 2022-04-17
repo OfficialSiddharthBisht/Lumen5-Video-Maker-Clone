@@ -31,14 +31,14 @@ header ul li a{
 #login{
     padding: 9px;
     color: blue;
-    border: 2px solid blue;
-    border-radius: 40%;
+    border: 1px solid blue;
+    border-radius: 25px;
 }
 .signup{
     padding: 11px;
     color: white;
     background-color: blue;
-    border-radius: 40%;
+    border-radius: 25px;
 }
 
 /* Dropdown Button */
@@ -98,6 +98,10 @@ header ul li a{
     display: none;
     margin: auto;
     cursor: pointer;
+ }
+ #navlist li img{
+     width: 170px;
+     margin-left: 80px;
  }
 @media all and ( max-width: 765px ) { 
     .navbar {

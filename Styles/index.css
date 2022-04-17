@@ -1,12 +1,30 @@
 .top-content{
     display: flex;
     justify-content: space-around;
+    align-content: space-around;
 }
-
+.top-content-left{
+    margin-left: 190px;
+}
+.top-content-left h1{
+    font-size: 35px;
+    font-weight:bolder;
+}
 .brand-logos{
     display: flex;
     justify-content: space-around;
 }
 .text-center{
     text-align: center;
+}
+
+@media all and ( max-width: 765px ) { 
+    .top-content{
+        flex-direction: column;
+    }
+    #logo{
+        width: 80px;
+        margin: 0;
+        padding: 0;
+    }
 }

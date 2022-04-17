@@ -27,8 +27,13 @@
 #drew-about img,#julia-about img,#promod-about img{
     width: 140px;
 }
+
 @media all and ( max-width: 765px ) { 
     .transform-blog-section ,.content-library-section,.stay-on-brand-section{
+        flex-direction: column;
+    }
+    .brands-content{
+        display: flex;
         flex-direction: column;
     }
 }
