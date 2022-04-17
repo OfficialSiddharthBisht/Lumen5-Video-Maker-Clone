@@ -1,0 +1,12 @@
+.top-content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.brand-logos{
+    display: flex;
+    justify-content: space-around;
+}
+.text-center{
+    text-align: center;
+}

@@ -6,7 +6,6 @@
     margin: 14%;
     display: flex;
     text-align: center;
-
 }
 .transform-blog-content,.content-library-content,.stay-on-brand-content {
     margin: 7%;
@@ -27,4 +26,9 @@
 }
 #drew-about img,#julia-about img,#promod-about img{
     width: 140px;
+}
+@media all and ( max-width: 765px ) { 
+    .transform-blog-section ,.content-library-section,.stay-on-brand-section{
+        flex-direction: column;
+    }
 }
