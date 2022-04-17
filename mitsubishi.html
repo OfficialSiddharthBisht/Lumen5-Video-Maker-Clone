@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="Styles/mitsubishi.css">
 </head>
 <body>
+    <header class="navbar"></header>
     <div id="mainpage">
         <div id="box1">
             <div id="dabba1">
@@ -155,5 +156,16 @@
         </div>
     </div>
     </div>
+    <footer></footer>
+    <script type= "module">
+        //Importing Footer In homepage
+        import foot from "/Components/footer.js";
+        let f = document.querySelector("footer");
+        f.innerHTML = foot();
+        // Importing navbar in homepage
+        import headd from "/Components/header.js";
+        let headNav = document.querySelector("header");
+        headNav.innerHTML = headd();
+    </script>
 </body>
 </html>

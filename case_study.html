@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Styles/case_study.css">
+    <link rel="stylesheet" href="Styles/navbar.css">
+    <link rel="stylesheet" href="Styles/footer.css">
 </head>
 <body>
+    <header class="navbar"></header>
  <div id="complete-page">
      <div id="main-div1">
          <div id="title">
@@ -131,9 +134,18 @@
                 </div>
             </div>
         </div>
-
-
      </div>
+     <footer></footer>
+     <script type= "module">
+        //Importing Footer In homepage
+        import foot from "/Components/footer.js";
+        let f = document.querySelector("footer");
+        f.innerHTML = foot();
+        // Importing navbar in homepage
+        import headd from "/Components/header.js";
+        let headNav = document.querySelector("header");
+        headNav.innerHTML = headd();
+    </script>
  </div>   
 </body>
 </html>

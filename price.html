@@ -13,51 +13,7 @@
 </head>
 
 <body>
-    <header>
-        <ul>
-            <li><img id="logo" src="Assets/Images/logo.png" alt="lumen5 logo" width="160px"></li>
-            <li id="space"> </li>
-            <!-- !To complete Create -->
-            <li>
-                <div class="dropdown">
-                    <button class="dropbtn">Create</button>
-                    <div class="dropdown-content">
-                        <a href="#">Photo Video Maker</a>
-                        <a href="#">Facebook Video Maker</a>
-                        <a href="#">YouTube Intro Maker</a>
-                        <a href="#">Instagram Video Maker</a>
-                        <a href="#">Instagram Story Maker</a>
-                        <a href="#">Promo Video Maker</a>
-                        <a href="#">Video Ad Maker</a>
-                        <a href="#">Marketing Video Maker</a>
-                        <a href="#">LinkedIn Video Maker</a>
-                        <a href="#">Business Video Maker</a>
-                        <a href="#">Ecommerce Video Maker</a>
-                        <a href="#">Explainer Video Maker</a>
-                        <a href="#">Slideshow Maker</a>
-                        <a href="#">Education Video Maker</a>
-                        <a href="#">Video Editor</a>
-                        <a href="#">Voiceover</a>
-                    </div>
-                </div>
-            </li>
-            <li><a href="./price.html">Pricing</a></li>
-            <li><a href="#">Enterprise</a></li>
-            <li><a href="#">Case studies</a></li>
-            <!-- ! To Complete Learn-->
-            <li>
-                <div class="dropdown">
-                    <button class="dropbtn">Learn</button>
-                    <div class="dropdown-content">
-                        <a href="#">Resources</a>
-                        <a href="#">Blog</a>
-                    </div>
-                </div>
-            </li>
-            <li><a id="login" href="#">Login</a></li>
-            <li><a id="signup" href="#">Sign up</a></li>
-        </ul>
-    </header>
+    <header class="navbar"></header>
     <div id="container1">
         <p>PRICING</p>
         <H1>Plans for your video content creation<br> strategy</H1>
@@ -927,57 +883,18 @@
         </div>
 
     </div>
-    <footer>
-        <div class="f-container">
-            <div class="footer-row">
-                <div class="footer-col">
-                    <img src="Assets/Images/logo-white.png" alt="Lumen5-logo" width="160px" style="margin: 50px;">
-                    <p id="footer-para">Lumen5 combines powerful A.I. with a simple drag-and-drop interface to
-                        help you
-                        create professional video content in minutes.</p>
-                </div>
-            </div>
-            <div class="footer-row">
-                <h4>EXPLORE</h4>
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">LinkedIn</a></li>
-                    <li><a href="#">Support</a></li>
-                    <li><a href="#">Community group</a></li>
-                </ul>
-            </div>
-            <div class="footer-row">
-                <h4>VIDEO TOOLS</h4>
-                <ul>
-                    <li><a href="#">Add Text to Video</a></li>
-                    <li><a href="#">Cut Video</a></li>
-                    <li><a href="#">Merge Video</a></li>
-                    <li><a href="#">Compress Video</a></li>
-                    <li><a href="#">Resize Video</a></li>
-                    <li><a href="#">See all</a></li>
-                </ul>
-            </div>
-            <div class="footer-row">
-                <h4>VIDEO CREATORS</h4>
-                <ul>
-                    <li><a href="#">Video Editor</a></li>
-                    <li><a href="#">Photo Video Maker</a></li>
-                    <li><a href="#">Facebook Video Maker</a></li>
-                    <li><a href="#">YouTube Intro Maker</a></li>
-                    <li><a href="#">Instagram Video Maker</a></li>
-                    <li><a href="#">See All</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="end-note">
-            <p>Copyright © 2022 Lumen5</p>
-            <p>Terms of Use & Privacy Policy</p>
-        </div>
-    </footer>
+    <footer></footer>
 </body>
 <script src="./javascript/price.js"></script>
-
+<script type= "module">
+    //Importing Footer In pricepage
+    import foot from "/Components/footer.js";
+    let f = document.querySelector("footer");
+    f.innerHTML = foot();
+    // Importing navbar in pricepage
+    import headd from "/Components/header.js";
+    let headNav = document.querySelector("header");
+    headNav.innerHTML = headd();
+</script>
 
 </html>
