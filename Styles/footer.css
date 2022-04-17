@@ -1,7 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
-img{
-    width: 100%;
-}
 footer{
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -33,6 +30,7 @@ footer .f-container{
 .footer-row h4{
     text-align: center;
 }
+
 @media all and (max-width:750px){
     footer .f-container{
         flex-direction: column;
