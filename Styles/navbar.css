@@ -2,10 +2,10 @@
 *{
     font-family: 'Poppins', sans-serif;
 }
+
 header{ 
     margin: 3%;
-    /* position: -webkit-sticky; */
-    width: 100%;
+    width: 90%;
     margin: 0;
     top: 0;
     position: sticky;
@@ -15,7 +15,7 @@ header{
 
 header ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 header ul li{
     list-style: none;
@@ -75,4 +75,43 @@ header ul li a{
   .dropdown:hover .dropdown-content {
       display:grid;
       grid-template-columns: repeat(2,1fr);
+}
+.navbar {
+    position: relative;
+}
+
+#navlist {
+   list-style: none;
+   display: flex;
+   padding: 0;
+   margin: 0;
+}
+
+#navlist li {
+  flex: auto;
+  text-align: center;
+  padding: 1.6em;
+  font-size: 18px;
+  color: white;
+}
+#toggle-nav {
+    display: none;
+    margin: auto;
+    cursor: pointer;
+ }
+@media all and ( max-width: 765px ) { 
+    .navbar {
+         padding: 1.6em;
+    }
+    header ul{
+        flex-direction: column;
+    }
+    #navlist {
+         flex-direction: column;
+         display: none;
+    }
+    #toggle-nav {
+        display: block;
+        color: black;
+     }
 }
