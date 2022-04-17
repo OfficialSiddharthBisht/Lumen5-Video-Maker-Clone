@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Styles/common.css">
     <title>Free Online Video-Ad Video Maker | lumen5</title>
+    <link rel="stylesheet" href="Styles/navbar.css">
+<link rel="stylesheet" href="Styles/footer.css">
 </head>
 <body>
     <header></header>
@@ -121,5 +123,15 @@
     </div>
 
     <footer></footer>
+    <script type= "module">
+        //Importing Footer In homepage
+        import foot from "./Components/footer.js";
+        let f = document.querySelector("footer");
+        f.innerHTML = foot();
+        // Importing navbar in homepage
+        import headd from "./Components/header.js";
+        let headNav = document.querySelector("header");
+        headNav.innerHTML = headd();
+    </script>
 </body>
 </html>
