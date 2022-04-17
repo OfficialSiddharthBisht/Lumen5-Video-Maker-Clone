@@ -16,51 +16,7 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header class="navbar">
-        <span id="toggle-nav" onclick="toggleNav()" style="margin-right: 50px;">
-            <i class="fa fa-bars" style="text-align: end;"></i>
-        </span>
-        <ul id="navlist">
-            <li><img src="Assets/Images/logo.png" alt="lumen5 logo"></li>
-            <li id="space"> </li>
-            <li>
-                <div class="dropdown">
-                    <button class="dropbtn">Create</button>
-                    <div class="dropdown-content">
-                        <a href="pagesInsideCreate/photo-video-maker.html">Photo_Video_Maker</a>
-                        <a href="pagesInsideCreate/facebook-video-maker.html">Facebook_Video_Maker</a>
-                        <a href="pagesInsideCreate/youtube-intro-maker.html">YouTube_Intro_Maker</a>
-                        <a href="pagesInsideCreate/instagram-video-maker.html">Instagram_Video_Maker</a>
-                        <a href="pagesInsideCreate/instagram-story-maker.html">Instagram_Story_Maker</a>
-                        <a href="pagesInsideCreate/promo-video-maker.html">Promo_Video_Maker</a>
-                        <a href="pagesInsideCreate/video-ad-maker.html">Video_Ad_Maker</a>
-                        <a href="pagesInsideCreate/marketing-video-maker.html">Marketing_Video_Maker</a>
-                        <a href="pagesInsideCreate/linkedin-video-maker.html">LinkedIn_Video_Maker</a>
-                        <a href="pagesInsideCreate/business-video-maker.html">Business_Video_Maker</a>
-                        <a href="pagesInsideCreate/ecommerce-video-maker.html">Ecommerce_Video_Maker</a>
-                        <a href="pagesInsideCreate/explainer-video-maker.html">Explainer_Video_Maker</a>
-                        <a href="pagesInsideCreate/slideshow-maker.html">Slideshow_Maker</a>
-                        <a href="pagesInsideCreate/education-video-maker.html">Education_Video_Maker</a>
-                    </div>
-                </div>
-            </li> 
-            <li><a href="./price.html">Pricing</a></li>
-            <li><a href="#">Enterprise</a></li>
-            <li><a href="case_study.html">Case studies</a></li>
-            <!-- ! To Complete Learn-->
-            <li>
-                <div class="dropdown">
-                <button class="dropbtn">Learn</button>
-                <div class="dropdown-content">
-                    <a href="#">Resources</a>
-                    <a href="#">Blog</a>
-                </div>
-                </div>
-            </li>
-            <li><a id = "login" href="login.html">Login</a></li>
-            <li><a class="signup" href="signup.html">Signup</a></li>
-        </ul>
-    </header>
+    <header class="navbar"></header>
     <div class="container">
         <div class="top-content">
             <div class="top-content-left">     
@@ -287,55 +243,19 @@
     </div>
 
     </div>
-    <footer>
-        <div class="f-container">
-            <div class="footer-row">
-                <div class="footer-col">
-                    <img src="Assets/Images/logo-white.png" alt="Lumen5-logo" width="80px" style="margin: 50px;">
-                    <p id="footer-para">Lumen5 combines powerful A.I. with a simple drag-and-drop interface to help you create professional video content in minutes.</p>
-                </div>
-            </div>
-            <div class="footer-row">
-                <h4>EXPLORE</h4>
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">LinkedIn</a></li>
-                    <li><a href="#">Support</a></li>
-                    <li><a href="#">Community group</a></li>
-                </ul>
-            </div>
-            <div class="footer-row hide-footer">
-                <h4>VIDEO TOOLS</h4>
-                <ul>
-                    <li><a href="#">Add Text to Video</a></li>
-                    <li><a href="#">Cut Video</a></li>
-                    <li><a href="#">Merge Video</a></li>
-                    <li><a href="#">Compress Video</a></li>
-                    <li><a href="#">Resize Video</a></li>
-                    <li><a href="#">See all</a></li>
-                </ul>
-            </div>
-            <div class="footer-row hide-footer">
-                <h4>VIDEO CREATORS</h4>
-                <ul>
-                    <li><a href="#">Video Editor</a></li>
-                    <li><a href="#">Photo Video Maker</a></li>
-                    <li><a href="#">Facebook Video Maker</a></li>
-                    <li><a href="#">YouTube Intro Maker</a></li>
-                    <li><a href="#">Instagram Video Maker</a></li>
-                    <li><a href="#">See All</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="end-note">
-            <p>Copyright © 2022 Lumen5</p>
-            <p>Terms of Use & Privacy Policy</p>
-        </div>
-    </footer>
+    <footer></footer>
     <script src="Components/lightbox.js"></script>
     <script src="Components/onHoverVid.js"></script>
     <script src="Components/navbar.js"></script>
+    <script type= "module">
+        //Importing Footer In homepage
+        import foot from "/Components/footer.js";
+        let f = document.querySelector("footer");
+        f.innerHTML = foot();
+        // Importing navbar in homepage
+        import headd from "/Components/header.js";
+        let headNav = document.querySelector("header");
+        headNav.innerHTML = headd();
+    </script>
 </body>
 </html>
