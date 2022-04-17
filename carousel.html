@@ -8,22 +8,33 @@
 </head>
 <style>
     * {box-sizing:border-box}
-
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 /* Slideshow container */
 .slideshow-container {
   width: 75%;
-  height: 400px;
-  
+  height: 650px;
   position: relative;
   margin: auto;
 }
-.slideshow-container img
+.slideshow-container > div >img
 {
     width: 10px;
     height: 400px;
-    border-radius: 12px;
-    
-
+    border-radius: 12px;    
+}
+.slideshow-container >h1
+{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    color: rgb(46, 32, 32);
+}
+.slideshow-container >p
+{   
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    color: rgb(24, 20, 20);
 }
 .mySlides {
   display: none;
@@ -40,7 +51,7 @@
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 50px;
-  background-color: rgb(223, 204, 204);
+  background-color: rgb(241, 234, 234);
   user-select: none;
 }
 
@@ -67,13 +78,29 @@
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
+  color: rgb(54, 48, 48);
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(255, 255, 253);
+  width: 450px;
+  height: 340px;
+  padding: 8px 35px;
   position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+  bottom:170px;
+  right: 12px;
+  font-size: 18px;
+  border-radius: 5px;
+  text-align: justify;
+}
+.text >hr
+{
+    display: inline-block;
+    width: 50%;
+    margin-right: 20px;
+}
+.text > a
+{
+    text-decoration: none;
+    color: grey;
 }
 .active:hover {
   background-color: #717171;
@@ -89,40 +116,130 @@
   from {opacity: .4}
   to {opacity: 1}
 }
+.innertext
+{
+    font-weight:100;
+}
+#bottomFlex
+{
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+}
+#bottomFlex img
+{
+    width: 120px;
+}
 </style>
 <body>
    <div class="slideshow-container">
+       <h1>Customer success stories</h1>
+       <p>Discover how leading brands are getting results with Lumen5.</p>
       <div class="mySlides fade">
         <img src="https://storage.googleapis.com/lumen5-site-images/carousel-berkshire-bg.png" style="width:100%">
-        <div class="text">Caption Text</div>
+        <div class="text">
+            <img src="https://storage.googleapis.com/lumen5-site-images/carousel-berkshire.png" >
+            <p class="innertext">“We were very attracted to Lumen5 due to the fact it was very turnkey and very simple. We could train a team of people to assist in the production of video.</p>
+            <h4>Glen Wellbrock</h4>
+              <p class="innertext">Senior Director of Marketing</p>
+              <hr>
+              <a href="">Read story ></a>
+
+        </div>
       </div>
     
       <div class="mySlides fade">
         <img src="https://storage.googleapis.com/lumen5-site-images/carousel-siemens-bg.png" style="width:100%">
-        <div class="text">Caption Two</div>
+        <div class="text">
+            <img src="https://storage.googleapis.com/lumen5-site-images/carousel-siemens.png" >
+            <p class="innertext">“With the traditional agency, the time is usually about one week. But with Lumen5, it’s cut down from weeks to hours.”</p>
+            <h4>Michelle Hsiao</h4> 
+            <p class="innertext">Visual Content Director at Siemens AG</p>
+              <hr>
+              <a href="">Read story ></a> 
+        </div>
       </div>
     
       <div class="mySlides fade">
         <img src="https://storage.googleapis.com/lumen5-site-images/carousel-dnv-bg.png" style="width:100%">
-        <div class="text">Caption Three</div>
+        <div class="text">
+            <img src="https://storage.googleapis.com/lumen5-site-images/carousel-dnv.png" >
+            <p class="innertext">“Lumen5 is especially helpful for business people who don't have the technical experience to make their own videos.”</p>
+            <h4>Peter Lovegrove</h4> 
+            <p class="innertext">Media Relations and Content Manager</p>
+              <hr>
+              <a href="">Read story ></a>
+        </div>
       </div>
       <div class="mySlides fade">
         <img src="https://storage.googleapis.com/lumen5-site-images/carousel-mhi-bg.png" style="width:100%">
-        <div class="text">Caption Three</div>
+        <div class="text">
+            <img src="https://storage.googleapis.com/lumen5-site-images/carousel-mitsubishi.png" >
+            <p class="innertext">“Thanks to Lumen5, we have been able to cut down on the time and costs related to video making.”</p>
+            <h4>Adrian Ngo</h4> 
+            <p class="innertext">Global Advertising and Sponsorships</p>
+              <hr>
+              <a href="">Read story ></a>
+        </div>
       </div>
       <div class="mySlides fade">
         <img src="https://storage.googleapis.com/lumen5-site-images/carousel-ncstate-bg.png" style="width:100%">
-        <div class="text">Caption Three</div>
+        <div class="text">
+            <img src="https://storage.googleapis.com/lumen5-site-images/carousel-ncstate.png" >
+            <p class="innertext">“We knew Lumen5 was the right tool, so there was no point in looking any further.”</p>
+            <h4>Drew Sykes</h4> 
+            <p class="innertext">Social Media Director</p>
+              <hr>
+              <a href="">Read story ></a>
+        </div>
       </div>
       <div class="mySlides fade">
         <img src="https://storage.googleapis.com/lumen5-site-images/carousel-cms-bg.png" style="width:100%">
-        <div class="text">Caption Three</div>
+        <div class="text">
+            <img src="https://storage.googleapis.com/lumen5-site-images/carousel-cms.png" >
+            <p class="innertext">“Lumen5 is especially helpful for business people who don't have the technical experience to make their own videos.”</p>
+            <h4>Amsal Alihodzic</h4> 
+            <p class="innertext">Senior Online Marketing Manager</p>
+              <hr>
+              <a href="">Read story ></a>
+        </div>
       </div>
       <div class="mySlides fade">
         <img src="https://storage.googleapis.com/lumen5-site-images/carousel-mondadori-bg.png" style="width:100%">
-        <div class="text">Caption Three</div>
+        <div class="text">
+            <img src="https://storage.googleapis.com/lumen5-site-images/carousel-mondadori.png" >
+            <p class="innertext">"Lumen5 helps us with what we want to achieve on social: engagement and reach."
+
+            </p>
+            <h4>Alfonso Biondi</h4> 
+            <p class="innertext">Social Video Specialist</p>
+              <hr>
+              <a href="">Read story ></a>
+        </div>
       </div>
-    
+      <div id="bottomFlex">
+        <div>
+            <img src="https://storage.googleapis.com/lumen5-site-images/carousel-siemens.png">
+        </div>
+        <div>
+            <img src="https://storage.googleapis.com/lumen5-site-images/carousel-dnv.png" >
+        </div>
+        <div>
+            <img src="https://storage.googleapis.com/lumen5-site-images/carousel-mitsubishi.png">
+        </div>
+        <div>
+            <img src="https://storage.googleapis.com/lumen5-site-images/carousel-ncstate.png">
+        </div>
+        <div>
+            <img src="https://storage.googleapis.com/lumen5-site-images/carousel-cms.png">
+        </div>
+        <div>
+            <img src="https://storage.googleapis.com/lumen5-site-images/carousel-mondadori.png">
+        </div>
+        <div>
+            <img src="https://storage.googleapis.com/lumen5-site-images/carousel-berkshire.png">
+        </div>
+    </div>
       <!-- Next and previous buttons -->
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
