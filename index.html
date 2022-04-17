@@ -26,10 +26,15 @@
             text-align: center;
         }
     </style>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header>
-        <ul>
+    <header class="navbar">
+        <span id="toggle-nav" onclick="toggleNav()" style="margin-right: 50px;">
+            <i class="fa fa-bars"></i>
+        </span>
+        <span><img id = "logo" src="Assets/Images/logo.png" alt="lumen5 logo" width="160px"></span>
+        <ul id="navlist">
             <li><img id = "logo" src="Assets/Images/logo.png" alt="lumen5 logo" width="160px"></li>
             <li id="space"> </li>
             <!-- !To complete Create -->
@@ -68,7 +73,7 @@
                 </div>
             </li>
             <li><a id = "login" href="login.html">Login</a></li>
-            <li><a class="signup" href="signup.html">Sign up</a></li>
+            <li><a class="signup" href="signup.html">Signup</a></li>
         </ul>
     </header>
     <div class="container">
@@ -346,5 +351,6 @@
     </footer>
     <script src="Components/lightbox.js"></script>
     <script src="Components/onHoverVid.js"></script>
+    <script src="Components/navbar.js"></script>
 </body>
 </html>
