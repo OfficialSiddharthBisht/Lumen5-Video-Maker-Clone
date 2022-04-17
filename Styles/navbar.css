@@ -1,6 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
 header{ 
     margin: 3%;
+    /* position: -webkit-sticky; */
+    width: 100%;
+    margin: 0;
+    top: 0;
     position: sticky;
+    background-color: white;
+    z-index: 2;
 }
 
 header ul{
