@@ -1,0 +1,17 @@
+.on-hover-video-play{
+    display: grid;
+    width: 80%;
+    margin: auto;
+    gap: 35px;
+    grid-template-columns: repeat(3,1fr);
+}
+.listing-card{
+    width: 100%;
+}
+
+.listing-card .video video {
+    border-radius: 10%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
