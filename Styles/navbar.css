@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 *{
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 
 header{ 
@@ -111,11 +112,21 @@ header ul li a{
         flex-direction: column;
     }
     #navlist {
+        position: relative;
+        margin: 0 auto;
+        padding: 0px 20px;
          flex-direction: column;
          display: none;
     }
     #toggle-nav {
         display: block;
         color: black;
+     }
+     #logo{
+         text-decoration: none;
+         line-height: 40px;
+     }
+     nav > ul{
+         float: right;
      }
 }
