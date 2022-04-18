@@ -28,7 +28,7 @@ function headd(){
         </div>
     </li> 
     <li><a href="./price.html">Pricing</a></li>
-    <li><a href="#">Enterprise</a></li>
+    <li><a href="demo_enterprises.html">Enterprise</a></li>
     <li><a href="case_study.html">Case studies</a></li>
     <!-- ! To Complete Learn-->
     <li>
