@@ -5,9 +5,10 @@
 
     <title>enterprise-demo</title>
     <link rel="stylesheet" href="enterprise.css">
-
+    <link rel="stylesheet" href="Styles/navbar.css">
+    <link rel="stylesheet" href="Styles/footer.css">
 </head>
-
+<header></header>
 <body>
     <div id="black">
         <div class="area">
@@ -150,7 +151,17 @@
 
         </div>
     </div>
-
+<footer></footer>
+<script type= "module">
+    //Importing Footer In homepage
+    import foot from "./Components/footer.js";
+    let f = document.querySelector("footer");
+    f.innerHTML = foot();
+    // Importing navbar in homepage
+    import headd from "./Components/header.js";
+    let headNav = document.querySelector("header");
+    headNav.innerHTML = headd();
+</script>
 </body>
 
 </html>
