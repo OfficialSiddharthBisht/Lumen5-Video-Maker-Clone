@@ -39,7 +39,7 @@
 }
 
 #black {
-    background-color: black;
+    background-color: #24282f;
     color: white;
     width: 100%;
 
@@ -84,7 +84,7 @@
 
 #request_btn {
     color: white;
-
+    text-decoration: none;
 }
 
 #btn {
@@ -97,4 +97,32 @@
     border-radius: 5rem;
     background-color: blue;
     font-weight: 400;
+}
+#container{
+    display: flex;
+    padding-left: 100px;
+    justify-content: space-around;
+}
+#text_container{
+    width: 550px;
+    height: fit-content;
+    margin: 0px 200px 200px 100px;
+    font-weight: 400;
+    font-size: 18px;
+}
+.icons {
+    width: 80px;
+    height:80px;
+    margin: 150px 200px 0px 700px ;
+    background-color: white;
+    
+}
+#b_img{
+    height: 80px;
+    width: 100px;
+    border-radius: 100rem;
+}
+#fw{
+    font-size: 40px;
+    font-weight: 700;
 }
