@@ -1,7 +1,7 @@
 var price = JSON.parse(localStorage.getItem("price"));
 var plantype = JSON.parse(localStorage.getItem("planType"));
 
-if (plantype == "yearly") {
+if (plantype == "yearly" && price != 15 && price != 79 && price != 199 ) {
 
     document.querySelector(".amount>span").innerHTML = 12 * price;
     document.querySelector("#price1>span").innerHTML = 12 * price;

@@ -252,7 +252,7 @@
     border-radius: 8px;
 }
 
-.compareBtn>button:hover {
+.compareBtn>a>button:hover {
     cursor: pointer;
 }
 
@@ -354,6 +354,14 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
+    #container8 {
+        display: none;
+    
+    }
+    
+    #container6 {
+        display: none;
+    }
 
 }
 
@@ -397,5 +405,13 @@
     #compareBtns {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+    #container8 {
+        display: none;
+    
+    }
+    
+    #container6 {
+        display: none;
     }
 }
